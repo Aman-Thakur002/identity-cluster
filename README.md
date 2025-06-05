@@ -67,7 +67,7 @@ The service uses a `Contacts` table with the following structure:
   linkPrecedence       "secondary"|"primary" // "primary" if it's the first Contact in the link
   createdAt            DateTime              
   updatedAt            DateTime              
-  deletedAt            DateTime?
+  deletedAt            DateTime
 }
 ```
 
