@@ -73,4 +73,5 @@ The service uses a `Contacts` table with the following structure:
 
 ## Deployment
 
-The API is deployed at: [Your deployment URL here]
+The API is deployed at: [https://identity-cluster.onrender.com]
+Postman Collection to test this API is added in the code itself, import it in postman
