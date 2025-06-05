@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "2ad15605-0ee6-49ed-83c0-51505ccaeecc",
+		"name": "Bitespeed Identity Reconciliation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37221447"
+	},
+	"item": [
+		{
+			"name": "Identify - New Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"aman@test2.com\",\n    \"phoneNumber\": \"1234567890\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://identity-cluster.onrender.com/api/identify",
+					"protocol": "https",
+					"host": [
+						"identity-cluster",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"identify"
+					]
+				},
+				"description": "Create a new primary contact when no existing contact is found."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3600",
+			"type": "string"
+		}
+	]
+}
